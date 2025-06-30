@@ -1,0 +1,208 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "username": "Alice",
+      "password": "password123",
+      "firstName": "Alice",
+      "lastName": "Wonderland",
+      "isAdmin": false,
+      "groupID": [
+        1
+      ],
+      "imageUrl": "https://images.unsplash.com/photo-1633332755192-727a05c4013d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnxlbnwwfHwwfHx8MA%3D%3D"
+    },
+    {
+      "id": "2",
+      "username": "Bob",
+      "password": "securepass",
+      "firstName": "Bob",
+      "lastName": "Builder",
+      "isAdmin": true,
+      "groupID": [
+        2
+      ],
+      "imageUrl": "https://plus.unsplash.com/premium_photo-1671656349322-41de944d259b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8dXNlcnxlbnwwfHwwfHx8MA%3D%3D"
+    },
+    {
+      "id": "a591",
+      "username": "Test",
+      "password": "123456",
+      "firstName": "Test",
+      "lastName": "User",
+      "isAdmin": false,
+      "groupID": [],
+      "imageUrl": "https://images.unsplash.com/photo-1633332755192-727a05c4013d?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dXNlcnxlbnwwfHwwfHx8MA%3D%3D"
+    },
+    {
+      "id": "4d8e",
+      "username": "PNijai",
+      "password": "1234567890",
+      "firstName": "Prasad",
+      "lastName": "Nijai",
+      "isAdmin": false,
+      "groupID": [
+        2,
+        1
+      ],
+      "imageUrl": "https://media.licdn.com/dms/image/v2/D4D03AQFWSGFs_cH13A/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1729316710218?e=1754524800&v=beta&t=afL4OM3Mf5r2M0wvreN8ghzdmF1Fyhfh-rzX-5gc52w"
+    }
+  ],
+  "groups": [
+    {
+      "id": "1",
+      "name": "College Group",
+      "photo": "https://static.toiimg.com/photo/msid-112642305,width-96,height-65.cms",
+      "qr": "https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=TrekSquad123",
+      "totalFunds": -1500,
+      "usersPaymentStatus": {
+        "1": "Paid",
+        "4d8e": "UnPaid"
+      },
+      "perMonth": 5000,
+      "deadline": 10,
+      "upcomingJourneyIDs": [
+        2
+      ],
+      "completedJourneyIDs": [
+        1
+      ],
+      "ongoingJourneyID": 1,
+      "notifications": [
+        "Fund deadline approaching!",
+        "PNijai Added Successfully"
+      ],
+      "admins": []
+    },
+    {
+      "id": "2",
+      "name": "Boys Group",
+      "photo": "https://images.squarespace-cdn.com/content/v1/58eb4273c534a5cb83c85625/1502452675149-OL4KLO33HZYK242B5WLW/1.jpg?format=1500w",
+      "qr": "https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=TrekSquad123",
+      "totalFunds": 500,
+      "usersPaymentStatus": {
+        "2": "Paid",
+        "4d8e": "UnPaid"
+      },
+      "perMonth": 500,
+      "deadline": 5,
+      "upcomingJourneyIDs": [
+        1
+      ],
+      "completedJourneyIDs": [
+        2
+      ],
+      "ongoingJourneyID": 0,
+      "notifications": [
+        "Fund deadline is today!",
+        "PNijai Added Successfully",
+        "Fund deadline approaching!"
+      ],
+      "admins": []
+    }
+  ],
+  "upcomingJourneys": [
+    {
+      "id": "1",
+      "placeName": "Goa",
+      "date": "2025-07-15",
+      "estimatedExpense": 10000,
+      "notes": "Beach party, book Airbnb early.",
+      "isEdit": true
+    },
+    {
+      "id": "2",
+      "placeName": "Manali",
+      "date": "2025-12-05",
+      "estimatedExpense": 15000,
+      "notes": "Snow trek and local sightseeing. Carry warm clothes.",
+      "isEdit": false
+    }
+  ],
+  "completedJourneys": [
+    {
+      "id": "1",
+      "placeName": "Lonavala",
+      "date": "2025-04-10",
+      "totalExpense": 7000,
+      "expenses": [
+        {
+          "name": "Travel",
+          "description": "Train tickets",
+          "amount": 1200
+        },
+        {
+          "name": "Food",
+          "description": "Lunch at dhaba",
+          "amount": 800
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "placeName": "Mahabaleshwar",
+      "date": "2025-05-20",
+      "totalExpense": 9500,
+      "expenses": [
+        {
+          "name": "Accommodation",
+          "description": "Hotel stay for 2 nights",
+          "amount": 5000
+        },
+        {
+          "name": "Travel",
+          "description": "Cab from Pune",
+          "amount": 3000
+        },
+        {
+          "name": "Snacks",
+          "description": "Evening snacks and coffee",
+          "amount": 1500
+        }
+      ]
+    }
+  ],
+  "ongoingJourney": [
+    {
+      "id": "1",
+      "placeName": "Manali",
+      "date": "2025-06-01",
+      "totalExpense": 3000,
+      "expenses": [
+        {
+          "name": "Cab",
+          "description": "Airport to hotel",
+          "amount": 1500
+        },
+        {
+          "name": "Snacks",
+          "description": "Evening snacks",
+          "amount": 500
+        }
+      ]
+    }
+  ],
+  "paymentStatus": [
+    {
+      "id": "1",
+      "groupId": 1,
+      "userId": 1,
+      "username": "Alice",
+      "month": 6,
+      "year": 2025,
+      "hasPaid": true,
+      "amount": 500,
+      "createdAt": "2025-06-01T12:30:00Z"
+    },
+    {
+      "id": "ec0f",
+      "groupId": "2",
+      "username": "Bob",
+      "month": 6,
+      "year": 2025,
+      "hasPaid": true,
+      "amount": 500,
+      "createdAt": "2025-06-05T09:37:25.877Z"
+    }
+  ]
+}
